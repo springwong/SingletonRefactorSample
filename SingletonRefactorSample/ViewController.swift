@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet var loginButton : UIButton!
     @IBOutlet var debugButton : UIButton!
     
-    private var dataManager : DataManager = DataManager.sharedInstance
+    private var dataManager : DataManagerContract = DataManager.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
