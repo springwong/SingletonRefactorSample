@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet var loginButton : UIButton!
     @IBOutlet var debugButton : UIButton!
+    
+    private var dataManager : DataManager = DataManager.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +29,14 @@ class ViewController: UIViewController {
     }
     
     func reset() {
-        DataManager.sharedInstance.reset()
+        dataManager.reset()
         loginButton.isHidden = false
     }
 
     func btnLoginOnClick() {
         //try to login , if false, we don't want user to login again
-        DataManager.sharedInstance.requestCheckLogin {
-            if DataManager.sharedInstance.getIsLoggedIn() {
+        dataManager.requestCheckLogin {
+            if self.dataManager.getIsLoggedIn() {
                 self.loginButton.isHidden = true
             }else {
                 self.loginButton.isHidden = false
