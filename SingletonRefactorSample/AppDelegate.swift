@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func getDataManager() -> DataManagerContract {
         if isUITesting() {
-            return DataManager.sharedInstance
+            return MockDataManager()
         }else {
             return DataManager.sharedInstance
         }
