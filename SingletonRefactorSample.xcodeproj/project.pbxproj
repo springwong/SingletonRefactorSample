@@ -18,6 +18,9 @@
 		6FC4912D1F64EDC900979ACB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC490FE1F64E7B300979ACB /* ViewController.swift */; };
 		6FC4912E1F64EDCC00979ACB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC490FC1F64E7B300979ACB /* AppDelegate.swift */; };
 		6FC4912F1F64EE5500979ACB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC4912A1F64E8FD00979ACB /* DataManager.swift */; };
+		6FC491311F657DB700979ACB /* DataManagerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC491301F657DB700979ACB /* DataManagerContract.swift */; };
+		6FC491321F657DB700979ACB /* DataManagerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC491301F657DB700979ACB /* DataManagerContract.swift */; };
+		6FC491331F657DB700979ACB /* DataManagerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC491301F657DB700979ACB /* DataManagerContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,7 @@
 		6FC4911C1F64E7B300979ACB /* SingletonRefactorSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonRefactorSampleUITests.swift; sourceTree = "<group>"; };
 		6FC4911E1F64E7B300979ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FC4912A1F64E8FD00979ACB /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6FC491301F657DB700979ACB /* DataManagerContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				6FC491031F64E7B300979ACB /* Assets.xcassets */,
 				6FC491051F64E7B300979ACB /* LaunchScreen.storyboard */,
 				6FC491081F64E7B300979ACB /* Info.plist */,
+				6FC491301F657DB700979ACB /* DataManagerContract.swift */,
 			);
 			path = SingletonRefactorSample;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				6FC490FF1F64E7B300979ACB /* ViewController.swift in Sources */,
 				6FC4912B1F64E8FD00979ACB /* DataManager.swift in Sources */,
 				6FC490FD1F64E7B300979ACB /* AppDelegate.swift in Sources */,
+				6FC491311F657DB700979ACB /* DataManagerContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FC491121F64E7B300979ACB /* SingletonRefactorSampleTests.swift in Sources */,
+				6FC491321F657DB700979ACB /* DataManagerContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +294,7 @@
 				6FC4912F1F64EE5500979ACB /* DataManager.swift in Sources */,
 				6FC4912D1F64EDC900979ACB /* ViewController.swift in Sources */,
 				6FC4911D1F64E7B300979ACB /* SingletonRefactorSampleUITests.swift in Sources */,
+				6FC491331F657DB700979ACB /* DataManagerContract.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
