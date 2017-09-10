@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DataManager {
+class DataManager : DataManagerContract {
     //singleton
     static let sharedInstance = DataManager()
     
