@@ -42,7 +42,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func getDataManager() -> DataManagerContract {
-        return DataManager.sharedInstance
+        if isUITesting() {
+            return DataManager.sharedInstance
+        }else {
+            return DataManager.sharedInstance
+        }
+    }
+    
+    private func isUITesting() -> Bool {
+        return ProcessInfo.processInfo.arguments.contains("UI-TESTING")
     }
 }
 
