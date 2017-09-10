@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     func btnLoginOnClick() {
         //try to login , if false, we don't want user to login again
         DataManager.sharedInstance.requestCheckLogin {
-            if DataManager.sharedInstance.isLoggedIn {
+            if DataManager.sharedInstance.getIsLoggedIn() {
                 self.loginButton.isHidden = true
             }else {
                 self.loginButton.isHidden = false

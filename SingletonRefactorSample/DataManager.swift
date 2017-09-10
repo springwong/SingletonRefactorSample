@@ -12,7 +12,7 @@ class DataManager {
     //singleton
     static let sharedInstance = DataManager()
     
-    var isLoggedIn = false
+    private var isLoggedIn = false
     
     //gen a random number, 1/2 probe to login success
     func requestCheckLogin(successHandler : (()->Void)?) {
@@ -24,5 +24,9 @@ class DataManager {
     
     func reset() {
         isLoggedIn = false
+    }
+    
+    func getIsLoggedIn() -> Bool {
+        return isLoggedIn
     }
 }
