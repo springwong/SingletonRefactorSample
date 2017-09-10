@@ -39,14 +39,18 @@ class ViewController: UIViewController {
                 self.loginButton.isHidden = true
             }else {
                 self.loginButton.isHidden = false
-                let alertVC = UIAlertController(title: "Login", message: "Login Fail", preferredStyle: .alert)
-                let cancelAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
-                    alertVC.dismiss(animated: true, completion: nil)
-                })
-                alertVC.addAction(cancelAction)
-                self.present(alertVC, animated: true)
+                self.showLoginFailDialog()
             }
         }
+    }
+    
+    func showLoginFailDialog() {
+        let alertVC = UIAlertController(title: "Login", message: "Login Fail", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            alertVC.dismiss(animated: true, completion: nil)
+        })
+        alertVC.addAction(cancelAction)
+        self.present(alertVC, animated: true)
     }
 }
 
